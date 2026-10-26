@@ -1,6 +1,6 @@
 # Path of the Companions 日本語化パッチ(このリポジトリ)
 
-Path of the Companions(Paths。Nexus 196635)の日本語化パッチ。原作者は hashhbbrown(GitHub: fatalCMD)。Fight With Me(FWM、Nexus 194766)は任意の連携先で、Paths の前提ではない。
+Path of the Companions(Paths。Nexus 196635)の日本語化パッチ。配布は Nexus のパッチ用ページ 196104(https://www.nexusmods.com/skyrimspecialedition/mods/196104)。原作者は hashhbbrown(GitHub: fatalCMD)。Fight With Me(FWM、Nexus 194766)は任意の連携先で、Paths の前提ではない。
 FWM の日本語化パッチは別リポジトリ(dolphag/Skyrim-Fight-With-Me-Japanese-translations-patch)。Paths 旧版(0.1.0)の DLL パッチは、そちらの `legacy/0.3.0/` と履歴にある(この MOD の旧版とは別物)。
 **方式**: DLL は触らない。原作が外部ファイルに分けたメッセージ(`Translations` フォルダ)の日本語版 `FightWithMePaths_JAPANESE.txt` を置く。経緯と仕様は `docs/FWM-0.5.0_Paths-1.0-findings.md`。
 常時読み込まれるので短く保つ。手順は `.claude/skills/`、用語は `docs/GLOSSARY.md`、版ごとの調査は `docs/` に置く。

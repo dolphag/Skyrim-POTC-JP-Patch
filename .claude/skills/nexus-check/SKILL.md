@@ -1,6 +1,6 @@
 ---
 name: nexus-check
-description: Nexus Mods の mod ページ(Paths 196635 など。このパッチ自身のページ ID は未記載)の版・更新日・ファイル一覧(fileId・MAIN/ARCHIVED・サイズ・公開時刻・changelog)を API で読む。リリース前の「原 MOD の最新版確認」「自分のページの版の確認」に使う。権限(Permissions and credits)は API に無いので別手段。
+description: Nexus Mods の mod ページ(Paths 196635、このパッチ 196104 など)の版・更新日・ファイル一覧(fileId・MAIN/ARCHIVED・サイズ・公開時刻・changelog)を API で読む。リリース前の「原 MOD の最新版確認」「自分のページの版の確認」に使う。権限(Permissions and credits)は API に無いので別手段。
 ---
 
 # Nexus API で確認する
@@ -12,7 +12,7 @@ description: Nexus Mods の mod ページ(Paths 196635 など。このパッチ�
 
 ## 手順
 1. `mod 196635`(Paths)で `version` / `updatedAt` / `modFiles` を読み、手元の zip の版と照合する。
-2. 自分のページは `mod <このパッチのページ ID>`(ID は README や CLAUDE.md に未記載。ユーザーに確認する)。Nexus の版と zip 内 README の版の一致確認に使う。
+2. 自分のページは `mod 196104`。Nexus の版と zip 内 README の版の一致確認に使う。
 3. 失敗したら(終了コード 1)、出たメッセージをそのまま報告する。**推測で埋めない**。
 
 ## ファイルの取得(任意・未検証)
