@@ -34,7 +34,7 @@ FWM の日本語化パッチは別リポジトリ(dolphag/Skyrim-Fight-With-Me-J
 - 折り返しは ASCII スペースでしか起きない。長文は文節区切りにスペースを入れる(`lang_build.py` が janome で自動)。
 - 表示倍率・位置の補正はできない(DLL を触らない)。窮屈な場所は訳を短くする。
 - **利用者向けの文面(README・Nexus)では、原作に「翻訳機能」があるように書かない**。原作はメッセージを外部ファイルに出しているだけ。Paths は別 MOD で、方式の変更点を強調しない。FWM は任意の連携先として書き、前提にしない。
-- 言語は `sLanguage`(ゲームか各 INI)。英語版ゲームの利用者には、`FightWithMePaths_user.ini`(FWM も使うなら `FightWithMe_user.ini` にも)への設定を README で案内する。
+- 言語は `sLanguage`(ゲームか各 INI)。JAPANESE のときは `FightWithMePaths_JAPANESE.txt`、ENGLISH のときは同じ内容の `FightWithMe_JA_Paths_ENGLISH.txt`(英語設定のまま日本語化している環境向け。名前は原作の英語ファイルより後に並ぶものにする)が読まれる。`_user.ini` は配らない(個人設定を消すため)。英語版ゲームの利用者には、`FightWithMePaths_user.ini`(FWM も使うなら `FightWithMe_user.ini` にも)への設定を README で案内する。
 - 日本語フォントが必須: 原作のテーマ用フォントは日本語を含まない。**翻訳と同じ zip に同梱する**(別ファイルにすると、同じページ名の MOD として MO2 に入れるとき「一つにまとめる/置き換える」のダイアログが出て混乱するため。2026-10-26 に統合)。`tools/make_font_pack.py`(ユーザーが添付する OFL のフォントから作る。フォントは GitHub に置かない。出力は決定的)。
 
 ## 作業の進め方

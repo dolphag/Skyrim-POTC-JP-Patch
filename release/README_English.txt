@@ -1,4 +1,4 @@
-Path of the Companions - Japanese Translations Patch 1.0.0-1 (for Path of the Companions 1.0.0)
+Path of the Companions - Japanese Translations Patch 1.0.0-2 (for Path of the Companions 1.0.0)
 =====================================================================
 A Japanese translation for Path of the Companions 1.0.0. The original keeps its messages in external text files; this patch is the Japanese version of those files, so no DLL is changed (just files to place).
 Original mods:
@@ -25,14 +25,17 @@ This patch already contains most of Fight With Me's screen texts; having both is
 Recommended: [Fonts] EnableChinese = true (SMF v3.18+), so kanji outside the Japanese glyph range in game-supplied strings (spell and companion names) do not show as "?".
 
 If it stays English
-The language follows the game (sLanguage in Skyrim.ini); the file is read when it is JAPANESE. If your game is not set to JAPANESE, add this to SKSE/Plugins/FightWithMePaths_user.ini (create it if missing; restart the game). If you also use Fight With Me, put the same in SKSE/Plugins/FightWithMe_user.ini (each DLL reads its own):
+The language follows the game (sLanguage in Skyrim.ini). FightWithMePaths_JAPANESE.txt is read when it is JAPANESE; FightWithMe_JA_Paths_ENGLISH.txt, a copy of the same content, is read when it is ENGLISH (an English game that was Japanized, for example). Either way, just placing the files is enough.
+For any other language name (FRENCH, ...), add this to SKSE/Plugins/FightWithMePaths_user.ini (create it if missing; restart the game). If you also use Fight With Me, put the same in SKSE/Plugins/FightWithMe_user.ini (each DLL reads its own):
     [Interface]
     sLanguage = JAPANESE
-The SKSE log should show "[Text] JAPANESE: N lines from ..." if the file was read.
+This setting only affects the texts of Path of the Companions's own screens. It does not affect SKSE Menu Framework as a whole, the game's language, or strings that come from the game (spell names, ...).
+The SKSE log should show "[Text] JAPANESE: N lines from ..." (or "[Text] ENGLISH: ..." in an English setup) if the files were read.
 
 Install
 Install as a mod (MO2, Vortex, ...). Files placed:
 SKSE/Plugins/FightWithMe/Translations/FightWithMePaths_JAPANESE.txt    the Paths trees, abilities, traits, panel, settings and notices
+SKSE/Plugins/FightWithMe/Translations/FightWithMe_JA_Paths_ENGLISH.txt    the same content, read when the language is ENGLISH
 SKSE/Plugins/Fonts/Lora-SemiBold.ttf, Spectral-SemiBold.ttf, BarlowSemiCondensed-SemiBold.ttf    a Japanese-capable font (replaces the original fonts of the same names)
 FONT-LICENSE.txt    the font's license (SIL OFL)
 No DLL, INI or save is touched; disable it to go back to English.
@@ -63,4 +66,5 @@ AI disclosure
 The translation and this text were made with AI assistance (Claude, Anthropic). Checked in game, but mistakes may remain; please report them in the Nexus comments.
 
 Changelog
+1.0.0-2: Works in a game set to English (sLanguage=ENGLISH) too: just place the files (added a copy of the same content that is read when the language is ENGLISH).
 1.0.0-1: First release, for Path of the Companions 1.0.0 (trees, abilities, traits, guide, settings and notices translated).

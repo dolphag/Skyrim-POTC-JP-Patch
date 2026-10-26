@@ -1,4 +1,4 @@
-Path of the Companions - Japanese Translations Patch 1.0.0-1 (対象: Path of the Companions 1.0.0)
+Path of the Companions - Japanese Translations Patch 1.0.0-2 (対象: Path of the Companions 1.0.0)
 =====================================================================
 Path of the Companions 1.0.0 を日本語化するパッチです。原作がメッセージを外部のテキストファイルに分けて読み込んでいるので、その日本語版を置きます。DLL は変更しません(ファイルを置くだけです)。
 原MOD:
@@ -30,18 +30,20 @@ Paths は Fight With Me(0.5.0)がなくても動きます。併用するとき�
 - 姉妹MODの日本語化パッチ: Walk With Me - Japanese Translations Patch  https://www.nexusmods.com/skyrimspecialedition/mods/194872
 
 ■ 日本語にならないとき
-言語はゲームの設定(Skyrim.ini の sLanguage)に従います。sLanguage=JAPANESE のときに読まれます。
-英語版ゲームなどで、sLanguage が JAPANESE でない場合は、次のファイルに書いてください(無ければ新規作成。反映はゲームの再起動後)。
+言語は、ゲームの設定(Skyrim.ini の sLanguage)に従います。JAPANESE のときは FightWithMePaths_JAPANESE.txt、ENGLISH のとき(英語版ゲームのまま日本語化している環境など)は、同じ内容の FightWithMe_JA_Paths_ENGLISH.txt が読まれます。どちらも、ファイルを置くだけで日本語になります。
+それ以外の言語名(FRENCH など)のときは、次のファイルに書いてください(無ければ新規作成。反映はゲームの再起動後)。
   SKSE/Plugins/FightWithMePaths_user.ini(Paths 用)
   Fight With Me も使う場合は、SKSE/Plugins/FightWithMe_user.ini にも同じ内容を書いてください(DLL ごとに別々に読みます)。
       [Interface]
       sLanguage = JAPANESE
-SKSE のログ(Documents/My Games/Skyrim Special Edition/SKSE)に「[Text] JAPANESE: N lines from ...」と出ていれば、日本語のファイルは読まれています。
+この設定が効くのは、Path of the Companions の画面の文言だけです。SKSE Menu Framework 全体や、ゲーム本体の言語、魔法名などのゲーム由来の文字列には影響しません。
+SKSE のログ(Documents/My Games/Skyrim Special Edition/SKSE)に「[Text] JAPANESE: N lines from ...」(ENGLISH のときは「[Text] ENGLISH: ...」)と出ていれば、日本語のファイルは読まれています。
 この行が無い、または「no translation files, so English」なら、ファイルの置き場所を確認してください。
 
 ■ 導入
 MOD として入れてください(MO2・Vortex など)。置かれるファイルは次のとおりです。
 SKSE/Plugins/FightWithMe/Translations/FightWithMePaths_JAPANESE.txt    Paths のツリー・アビリティ・特性・パネル・設定・通知の文言
+SKSE/Plugins/FightWithMe/Translations/FightWithMe_JA_Paths_ENGLISH.txt    上と同じ内容(言語名が ENGLISH のときに読まれる)
 SKSE/Plugins/Fonts/Lora-SemiBold.ttf, Spectral-SemiBold.ttf, BarlowSemiCondensed-SemiBold.ttf    日本語対応フォント(原作の同名のフォントを置き換えます)
 FONT-LICENSE.txt    フォントのライセンス(SIL OFL)
 ファイルを置くだけで、DLL・INI・セーブには影響しません。無効にすれば元に戻ります。
@@ -82,4 +84,5 @@ GitHub にはソースコード(生成スクリプトと翻訳表)のみを置�
 日本語でも楽しめるようにと、感謝を込めて作った非公式の翻訳です。
 
 ■ 更新履歴
+1.0.0-2: 英語設定(sLanguage=ENGLISH)のまま日本語化している環境でも、ファイルを置くだけで日本語になるようにした(言語名が ENGLISH のときに読まれる、同じ内容のファイルを追加)。
 1.0.0-1: 初版。Path of the Companions 1.0.0 用。ツリー・アビリティ・特性・ガイド・設定・通知を日本語化。
