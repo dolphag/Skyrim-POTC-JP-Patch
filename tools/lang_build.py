@@ -163,7 +163,7 @@ def wrapfix(v):
     return '\n'.join(wrapfix_line(l) for l in v.split('\n'))
 
 
-def build(keys, a, out_name, title):
+def build(keys, a, out_name, alias_name, title):
     tbl = load_csv(a.csv)
     kanji = load_kanji()
     bad = []
@@ -205,7 +205,12 @@ def build(keys, a, out_name, title):
     os.makedirs(d, exist_ok=True)
     with open(os.path.join(d, out_name), 'w', encoding='utf-8', newline='\n') as f:
         f.write(text)
-    print(f'{out_name}: {len(keys)} 項目')
+    # 英語設定(sLanguage=ENGLISH)のまま日本語化している環境向けの写し。ゲームの言語名が ENGLISH のときに読まれる。
+    # 名前は、原作の FightWithMe_ENGLISH.txt(英語から英語への行。後に読まれると訳を上書きする)より後に並ぶものにする。
+    alias_text = text.replace('# 原 MOD:', '# このファイルは、言語名が ENGLISH のときに読まれる同じ内容の写しです(英語設定のまま日本語化している環境向け)。\n# 原 MOD:', 1)
+    with open(os.path.join(d, alias_name), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(alias_text)
+    print(f'{out_name}, {alias_name}: {len(keys)} 項目')
 
 
 def main():
@@ -219,7 +224,7 @@ def main():
     with zipfile.ZipFile(a.paths) as z:
         keys = list(dict.fromkeys(read_template(z.read(TPL_DIR + 'FightWithMe_ENGLISH.txt')) +
                                   read_template(z.read(TPL_DIR + 'FightWithMePaths_ENGLISH.txt'))))
-    build(keys, a, 'FightWithMePaths_JAPANESE.txt', 'Path of the Companions (Paths が使う共通の文言を含む)')
+    build(keys, a, 'FightWithMePaths_JAPANESE.txt', 'FightWithMe_JA_Paths_ENGLISH.txt', 'Path of the Companions (Paths が使う共通の文言を含む)')
 
 
 if __name__ == '__main__':
