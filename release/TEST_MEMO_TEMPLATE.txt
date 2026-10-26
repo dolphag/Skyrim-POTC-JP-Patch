@@ -1,0 +1,7 @@
+Path of the Companions 日本語化 テスト版<N> (訳 + 日本語フォント。DLLなし)
+・導入順: Path of the Companions → POTC Effects → 日本語化パッチ → 日本語フォント(フォントが原作のフォントに勝つように)
+・最初に、SKSE のログ(FightWithMePaths 系 .log)の1行目の版と、「[Text] JAPANESE: N lines from ...」の行を教えてください。
+・test<N-1> からの変更:
+  - (変更点を、画面の場所と内容で書く)
+・確認してほしい点: (どこを見て何を判断してほしいか。足りない/行き過ぎならスクリーンショットを)
+・補足: (既知の制限、副作用)
