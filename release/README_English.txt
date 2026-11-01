@@ -1,13 +1,13 @@
-Path of the Companions - Japanese Translations Patch 1.0.0-2 (for Path of the Companions 1.0.0)
+Path of the Companions - Japanese Translations Patch 1.2.0-1 (for Path of the Companions 1.2.0)
 =====================================================================
-A Japanese translation for Path of the Companions 1.0.0. The original keeps its messages in external text files; this patch is the Japanese version of those files, so no DLL is changed (just files to place).
+A Japanese translation for Path of the Companions 1.2.0. The original keeps its messages in external text files; this patch is the Japanese version of those files, so no DLL is changed (just files to place).
 Original mods:
 - Path of the Companions (Paths)  https://www.nexusmods.com/skyrimspecialedition/mods/196635
 - Fight With Me (optional companion)  https://www.nexusmods.com/skyrimspecialedition/mods/194766
 Original author: hashhbbrown (GitHub: fatalCMD)
 
 Requirements
-- Path of the Companions 1.0.0 and POTC Effects 1.0.21 or newer (required by the original)
+- Path of the Companions 1.2.0 and POTC Effects 1.0.22 or newer (required by the original)
 - SKSE Menu Framework 3 with Japanese enabled: [Fonts] EnableJapanese = true, PrimaryFont = NotoSansJP-Medium.ttf (or similar) in SKSEMenuFramework.ini.
 - A Japanese font: included in this patch (see "Japanese font (included)" below).
 
@@ -19,7 +19,7 @@ To use your own font, disable the three files in SKSE/Plugins/Fonts/ of this pat
 The Fight With Me Japanese patch contains the same font (identical files, so having both is fine; if you are asked to overwrite, either choice is the same).
 
 If you also use Fight With Me (optional)
-Paths works without Fight With Me 0.5.0. If you use both, install the Fight With Me Japanese patch (a separate page) too, so Fight With Me's own screens (battle plan, ...) are translated.
+Paths works without Fight With Me 0.6.0 (if you use both, update both: Paths 1.2 does not connect to older Fight With Me versions). If you use both, install the Fight With Me Japanese patch (a separate page) too, so Fight With Me's own screens (battle plan, ...) are translated.
 This patch already contains most of Fight With Me's screen texts; having both is fine (for shared texts the Fight With Me patch is read later and wins).
 
 Recommended: [Fonts] EnableChinese = true (SMF v3.18+), so kanji outside the Japanese glyph range in game-supplied strings (spell and companion names) do not show as "?".
@@ -66,5 +66,6 @@ AI disclosure
 The translation and this text were made with AI assistance (Claude, Anthropic). Checked in game, but mistakes may remain; please report them in the Nexus comments.
 
 Changelog
+1.2.0-1: Updated for Path of the Companions 1.2.0: the new Path of the Skald (unlock screen, four Ljodhs, traits, notices), the follower damage setting, the role weapons setting and the changed auto-battle and theme texts. Status-line separators are unified now that the original fixed its garbled characters.
 1.0.0-2: Works in a game set to English (sLanguage=ENGLISH) too: just place the files (added a copy of the same content that is read when the language is ENGLISH).
 1.0.0-1: First release, for Path of the Companions 1.0.0 (trees, abilities, traits, guide, settings and notices translated).

@@ -25,3 +25,15 @@
 | companion | 従者 | |
 | path(一般名詞) | ツリー | 固有名は「刃/盾/癒し/槌/矢/嵐の道」 |
 | Archer(役割) / archer(敵) | アーチャー / 弓兵 | |
+
+## Paths 1.2.0 で追加(暫定。実機確認前)
+| 英語 | 日本語 | 備考 |
+|---|---|---|
+| Skald / Path of the Skald | スカルド / スカルドの道 | 北欧の吟遊詩人 |
+| Ljodh(Ljóð) | リョード | 古ノルド語で「詩・歌」。読みは暫定 |
+| Fervor / Echoes / Hollow / Glory | 熱狂 / 残響 / 虚ろ / 栄光 | リョード 4 種 |
+| stack | スタック | 「重複しない」の意味の stack(効果が加算されない)は従来どおり「重複」 |
+| finale / final chord | 終曲 / 最後の和音 | |
+| pp(percentage points) | ポイント | 「%ポイント」は長いので略 |
+| spell wind-up | 魔法の準備時間 | |
+| skill points(Skald の解放) | ポイント | 「スキルポイント」はアビリティと混同するので避けた。パークポイントとの異同は未確認 |

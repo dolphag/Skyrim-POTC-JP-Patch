@@ -65,7 +65,10 @@ def fields(s):
 def field_problem(en, ja):
     fe, fj = fields(en), fields(ja)
     if any(i is not None for i, _ in fe):
-        return 'English has numbered fields'  # 英語側が番号付きなら人が見る
+        # 英語側が番号付き(Paths 1.2 の {0})なら、番号と書式の組が英日で同じ集合であることを要求する
+        if any(i is None for i, _ in fe + fj):
+            return 'automatic and numbered fields mixed'
+        return None if sorted(fe) == sorted(fj) else f'numbered fields {fe} != {fj}'
     specs = [s for _, s in fe]
     if all(i is None for i, _ in fj):
         return None if [s for _, s in fj] == specs else f'fields {specs} != {[s for _, s in fj]}'

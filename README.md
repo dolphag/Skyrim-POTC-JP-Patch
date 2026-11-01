@@ -7,7 +7,7 @@ Sister patches: Fight With Me <https://www.nexusmods.com/skyrimspecialedition/mo
 [日本語は下](#日本語)
 
 Scripts and the translation table for the Japanese translation patch for
-[Path of the Companions](https://www.nexusmods.com/skyrimspecialedition/mods/196635) (Paths) **1.0.0** by **hashhbbrown** (GitHub: fatalCMD).
+[Path of the Companions](https://www.nexusmods.com/skyrimspecialedition/mods/196635) (Paths) **1.2.0** by **hashhbbrown** (GitHub: fatalCMD).
 Fight With Me is an optional companion of Paths, not a prerequisite; it has its own patch.
 The original keeps its messages in external text files (`SKSE/Plugins/FightWithMe/Translations/`); the patch is the Japanese version of those files, so no DLL is changed.
 The patch files are distributed **only on Nexus Mods**, following the permissions on the original page.
@@ -29,7 +29,7 @@ only the scripts that build the Japanese message file, and the English → Japan
 - `release/`: README templates and the Nexus text. `docs/`: findings about the original (format, fonts, packaging), glossary, a draft report for the original author (not sent).
 
 ## Versions
-Patch versions follow Path of the Companions: **1.0.0-1** is for Paths 1.0.0.
+Patch versions follow Path of the Companions: **1.2.0-1** is for Paths 1.2.0.
 Recommended for users: Japanese enabled in `SKSEMenuFramework.ini` (`EnableJapanese = true`), plus `EnableChinese = true` (SMF v3.18+) for kanji outside the Japanese glyph range in game-supplied strings. A Japanese UI font is bundled in the distribution zip, because the original's theme fonts have no Japanese glyphs.
 
 ## How it works (short)
@@ -40,7 +40,7 @@ Long Japanese lines get ASCII spaces at phrase boundaries (janome), because the 
 ```
 python3 -I tools/lang_build.py --paths "<Path of the Companions zip>" --out out/ja
 python3 -I tools/make_font_pack.py --font NotoSansJP-Medium.ttf --license OFL.txt --out out/font
-python3 -I tools/make_zip.py release out/ja --font-dir out/font --version 1.0.0-1
+python3 -I tools/make_zip.py release out/ja --font-dir out/font --version 1.2.0-1
 ```
 
 ## Notes
@@ -55,7 +55,7 @@ Nexus Mods のページ: (公開後にリンクを追記します)
 
 姉妹MODのパッチ: Fight With Me <https://www.nexusmods.com/skyrimspecialedition/mods/194874>(ツール: <https://github.com/dolphag/Skyrim-Fight-With-Me-Japanese-translations-patch>)、Walk With Me <https://www.nexusmods.com/skyrimspecialedition/mods/194872>(ツール: <https://github.com/dolphag/Skyrim-Walk-With-Me-Japanese-translations-patch>)
 
-[Path of the Companions](https://www.nexusmods.com/skyrimspecialedition/mods/196635)(Paths)**1.0.0** の日本語化パッチのスクリプトと翻訳表です。原作者は **hashhbbrown**(GitHub: fatalCMD)。
+[Path of the Companions](https://www.nexusmods.com/skyrimspecialedition/mods/196635)(Paths)**1.2.0** の日本語化パッチのスクリプトと翻訳表です。原作者は **hashhbbrown**(GitHub: fatalCMD)。
 Fight With Me は Paths の任意の連携先で、前提ではありません(Fight With Me には別のパッチがあります)。
 原作はメッセージを外部のテキストファイル(`SKSE/Plugins/FightWithMe/Translations/`)に分けています。本パッチはその日本語版で、DLL は変更しません。
 パッチのファイルは、原MODページの権限表示に従い、**Nexus Mods でのみ配布**します。
@@ -76,7 +76,7 @@ Fight With Me は Paths の任意の連携先で、前提ではありません(F
 - `release/`: README の雛形と Nexus 用文面。`docs/`: 原作の調査(形式・フォント・同梱)、用語集、原作者向け報告の文案(未送信)。
 
 ### 版
-パッチの版は Path of the Companions に連動します。**1.0.0-1** は Paths 1.0.0 用です。
+パッチの版は Path of the Companions に連動します。**1.2.0-1** は Paths 1.2.0 用です。
 利用者への推奨: `SKSEMenuFramework.ini` で日本語を有効にする(`EnableJapanese = true`)。ゲーム由来の文字列の、日本語範囲外の漢字には `EnableChinese = true`(SMF v3.18 以降)。日本語フォントは配布 zip に同梱します(原作のテーマ用フォントは日本語を含まないため)。
 
 ### しくみ(短く)

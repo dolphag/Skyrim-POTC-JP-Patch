@@ -1,13 +1,13 @@
-Path of the Companions - Japanese Translations Patch 1.0.0-2 (対象: Path of the Companions 1.0.0)
+Path of the Companions - Japanese Translations Patch 1.2.0-1 (対象: Path of the Companions 1.2.0)
 =====================================================================
-Path of the Companions 1.0.0 を日本語化するパッチです。原作がメッセージを外部のテキストファイルに分けて読み込んでいるので、その日本語版を置きます。DLL は変更しません(ファイルを置くだけです)。
+Path of the Companions 1.2.0 を日本語化するパッチです。原作がメッセージを外部のテキストファイルに分けて読み込んでいるので、その日本語版を置きます。DLL は変更しません(ファイルを置くだけです)。
 原MOD:
 - Path of the Companions (Paths)  https://www.nexusmods.com/skyrimspecialedition/mods/196635
 - Fight With Me(任意の連携先)  https://www.nexusmods.com/skyrimspecialedition/mods/194766
 原作者: hashhbbrown (GitHub: fatalCMD)
 
 ■ 必須
-- Path of the Companions 1.0.0 と、POTC Effects 1.0.21 以上(原作の必須ファイル)
+- Path of the Companions 1.2.0 と、POTC Effects 1.0.22 以上(原作の必須ファイル)
 - SKSE Menu Framework 3(日本語を表示する設定を含む)。SKSEMenuFramework.ini の [Fonts] で EnableJapanese = true、PrimaryFont = NotoSansJP-Medium.ttf など。
   日本語環境を導入済みなら追加の設定は不要です。作者は 2game 様の日本語化ファイルで動作を確認しています。
   https://skyrimspecialedition.2game.info/detail.php?id=120352
@@ -21,7 +21,7 @@ MOD の優先順位は「原作 → 本パッチ」の順にして、フォン�
 Fight With Me の日本語化パッチにも同じフォントが入っています(同一のファイルなので、両方入れても問題ありません。上書きの確認が出たら、どちらを選んでも同じです)。
 
 ■ Fight With Me を併用する場合(任意)
-Paths は Fight With Me(0.5.0)がなくても動きます。併用するときは、Fight With Me 用の日本語化パッチ(別ページ)も入れてください。バトルプランなど、Fight With Me の画面が日本語になります。
+Paths は Fight With Me(0.6.0)がなくても動きます(併用するなら、Paths 1.2 は古い Fight With Me とは連携しないので、両方を更新してください)。併用するときは、Fight With Me 用の日本語化パッチ(別ページ)も入れてください。バトルプランなど、Fight With Me の画面が日本語になります。
 この zip の訳にも、Fight With Me の画面の文言の大部分が含まれています。両方を入れても問題ありません(共通の文言は、Fight With Me 用パッチのほうが後に読まれて優先されます)。
 
 ■ 推奨
@@ -84,5 +84,6 @@ GitHub にはソースコード(生成スクリプトと翻訳表)のみを置�
 日本語でも楽しめるようにと、感謝を込めて作った非公式の翻訳です。
 
 ■ 更新履歴
+1.2.0-1: Path of the Companions 1.2.0 に対応。新しいツリー「スカルドの道」(解放画面、リョード4種、特性、通知)、従者のダメージ設定、役割ごとの武器の設定、オートバトル・テーマ関連の文言を日本語化。原作が文字化けを直したため、状態表示の区切りを「・」に統一。
 1.0.0-2: 英語設定(sLanguage=ENGLISH)のまま日本語化している環境でも、ファイルを置くだけで日本語になるようにした(言語名が ENGLISH のときに読まれる、同じ内容のファイルを追加)。
 1.0.0-1: 初版。Path of the Companions 1.0.0 用。ツリー・アビリティ・特性・ガイド・設定・通知を日本語化。
