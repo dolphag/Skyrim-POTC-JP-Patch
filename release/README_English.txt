@@ -47,13 +47,14 @@ SHA-256 of the text file:
 What is not in Japanese
 - The role / focus / position dropdowns on the Party settings page (the choices and their hover tooltips). This screen is shared with Fight With Me, and the original does not read these texts from its external message files, so they stay English until it is fixed upstream.
 - Theme names (Vanilla / Oxblood / Nordic) are kept as in the original.
+- The Skald's notices and status lines during a performance could not be checked on screen by the author (the translations are included).
 - Key names and button labels (Tab, Esc, ...), logs, INI comments.
 - Strings that come from the game or other mods (spell and companion names).
 - Texts the original added after this version.
 
 Rights, source and credits
 Original author: hashhbbrown (GitHub: fatalCMD). All original strings, trees and game design belong to the author.
-This unofficial translation follows the permissions shown on the Path of the Companions page (checked by the user on 2026-10-26: modification, asset use and uploading to other sites allowed with credit).
+This unofficial translation follows the permissions shown on the Path of the Companions page (checked by the user on 2026-11-01: modification, asset use and uploading to other sites allowed with credit).
 This patch contains no file of the originals (no DLL or images), only the original's English strings (the left column of the message file), the Japanese translation and a Japanese font.
 Distributed on Nexus Mods only, as a translation page. Please do not re-upload it. GitHub holds only the source (scripts and the translation table), not this file or the font.
 Please do not contact the original author about problems with this patch. It will be removed promptly if the author asks. No warranty.

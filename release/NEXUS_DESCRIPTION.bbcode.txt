@@ -55,13 +55,14 @@ SKSE Menu Framework の日本語グリフ範囲の制限があり、この範囲
 [list]
 [*]パーティ設定ページの、役割・注目対象・位置取りのドロップダウン(選択肢と、その説明のホバー表示)は、Fight With Me と共通の画面で、原作のこの部分がメッセージのファイルを通していないため、英語のままです(原作側の修正が必要です)。[/*]
 [*]テーマ名(Vanilla / Oxblood / Nordic)は、原文のままにしています。[/*]
+[*]スカルドの演奏中の通知・状態表示は、作者の環境で表示を確認できていません(訳は入れてあります)。[/*]
 [*]キー名・ボタン表示、ログ、INIのコメントは変更できません。[/*]
 [/list]
 「スキル」は、バニラのスキルと混同しないよう、「アビリティ」に統一しています。
 新しいアビリティ名(ケイオスダウン、最後の砦、風渡り、爆裂矢 など)は意訳を含み、一部は暫定です。ご意見があればコメントでお知らせください。
 
 [b]権利・ソース[/b]
-Path of the Companions のページの権限表示(改変・素材の利用・他サイトへの転載は出典明記で可。2026-10-26 に確認)に従って作った非公式の翻訳です。本パッチは Nexus Mods のこのページでのみ配布します。他サイトへの転載はご遠慮ください。作者から依頼があれば速やかに削除します。
+Path of the Companions のページの権限表示(改変・素材の利用・他サイトへの転載は出典明記で可。2026-11-01 に確認)に従って作った非公式の翻訳です。本パッチは Nexus Mods のこのページでのみ配布します。他サイトへの転載はご遠慮ください。作者から依頼があれば速やかに削除します。
 本パッチに、本体のファイル(DLL・画像など)は含まれません。含まれるのは、原作の英語の文言と、その日本語訳、日本語フォントです。
 パッチ生成のスクリプトと翻訳表(配布用のファイルやフォントは含みません)は [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch]GitHub[/url] にあります(版ごとにタグがあります)。
 日本語フォント(同梱)は、Noto Sans JP(Copyright 2014-2021 Adobe)を元に、内部の名前を付け替えたものです。SIL Open Font License 1.1。
@@ -127,12 +128,13 @@ The tree screens (abilities, branches, traits, ranks, bonuses, the guide), setti
 [list]
 [*]The role / focus / position dropdowns on the Party settings page (the choices and their hover tooltips) stay in English. This screen is shared with Fight With Me, and the original does not read these texts from its external message files, so it needs a fix on the original's side.[/*]
 [*]Theme names (Vanilla / Oxblood / Nordic) are kept as in the original.[/*]
+[*]The Skald's notices and status lines during a performance could not be checked on screen by the author (the translations are included).[/*]
 [*]Key names, button labels, logs and INI comments cannot be changed.[/*]
 [/list]
 "Skill" is rendered as "アビリティ" (ability) to avoid confusion with vanilla skills. Some new ability names are free translations and provisional; feedback is welcome in the comments.
 
 [b]Rights / source[/b]
-An unofficial translation made following the permissions on the Path of the Companions page (modification, asset use and uploading to other sites allowed with credit; checked on 2026-10-26). It is distributed only here on Nexus Mods; please do not repost it. It will be removed promptly if the author asks.
+An unofficial translation made following the permissions on the Path of the Companions page (modification, asset use and uploading to other sites allowed with credit; checked on 2026-11-01). It is distributed only here on Nexus Mods; please do not repost it. It will be removed promptly if the author asks.
 This patch contains no file of the original (no DLL or images), only the original's English strings, the Japanese translation and a Japanese font.
 Scripts and the translation table (no distribution files or fonts): [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch]GitHub[/url] (one tag per version).
 The Japanese font (included) is based on Noto Sans JP (Copyright 2014-2021 Adobe) with its internal names changed; SIL Open Font License 1.1.
