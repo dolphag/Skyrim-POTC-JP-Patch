@@ -21,7 +21,7 @@ Fight With Me の日本語化パッチにも同じフォントが入っていま
 [/list]
 
 [b]Fight With Me を併用する場合(任意)[/b]
-Path of the Companions は [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url] がなくても動きます。併用するときは、Fight With Me 用の日本語化パッチ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url])も入れてください。バトルプランなど、Fight With Me の画面が日本語になります。
+Path of the Companions は [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url] がなくても動きます。併用するときは、Fight With Me 用の日本語化パッチ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url])の 0.6.0 用(本パッチと同時に更新)も入れてください。0.5.0 用の古いパッチのままだと、共通の文言の一部で訳が食い違います。バトルプランなど、Fight With Me の画面が日本語になります。
 本パッチの訳にも Fight With Me の画面の文言の大部分が含まれているので、両方入れても問題ありません。
 
 [b]バージョンについて[/b]
@@ -99,7 +99,7 @@ The Fight With Me Japanese patch contains the same font (identical files, so hav
 [/list]
 
 [b]If you also use Fight With Me (optional)[/b]
-Path of the Companions works without [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url]. If you use both, install the Fight With Me patch ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url]) too, so its own screens (battle plan, ...) are translated.
+Path of the Companions works without [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url]. If you use both, install the Fight With Me patch ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url]) for 0.6.0 (updated together with this one) too; with the older 0.5.0 patch some shared texts are translated differently. This way its own screens (battle plan, ...) are translated.
 This patch already contains most of Fight With Me's screen texts, so having both is fine.
 
 [b]Versions[/b]

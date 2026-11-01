@@ -19,7 +19,7 @@ To use your own font, disable the three files in SKSE/Plugins/Fonts/ of this pat
 The Fight With Me Japanese patch contains the same font (identical files, so having both is fine; if you are asked to overwrite, either choice is the same).
 
 If you also use Fight With Me (optional)
-Paths works without Fight With Me 0.6.0 (if you use both, update both: Paths 1.2 does not connect to older Fight With Me versions). If you use both, install the Fight With Me Japanese patch (a separate page) too, so Fight With Me's own screens (battle plan, ...) are translated.
+Paths works without Fight With Me 0.6.0 (if you use both, update both: Paths 1.2 does not connect to older Fight With Me versions). If you use both, install the Fight With Me Japanese patch for 0.6.0 (a separate page, updated together with this one) too; with the older 0.5.0 patch, some shared texts are translated differently from this patch. This lets Fight With Me's own screens (battle plan, ...) are translated.
 This patch already contains most of Fight With Me's screen texts; having both is fine (for shared texts the Fight With Me patch is read later and wins).
 
 Recommended: [Fonts] EnableChinese = true (SMF v3.18+), so kanji outside the Japanese glyph range in game-supplied strings (spell and companion names) do not show as "?".
