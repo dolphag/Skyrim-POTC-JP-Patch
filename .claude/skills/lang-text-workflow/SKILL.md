@@ -18,7 +18,7 @@ DLL は触らない。原作が外部ファイルに分けたメッセージの�
 2. 生成と検査: `python3 -I tools/lang_build.py --paths <Paths zip> --out out/ja`
    - 未訳、書式欄(`{}` `{:.0f}` `{0}`)の種類・順序の不一致、`tools/jp_kanji.txt` 範囲外の漢字、CSV に残った古い項目があると失敗する。
    - 範囲外の漢字はひらがなにする。番号付き書式(`{1}`)にすれば順序を入れ替えられる。
-3. テスト版: メモを `release/TEST_MEMO_TEMPLATE.txt` の形で書き、`python3 -I tools/make_zip.py test out/ja <N> --memo <メモ> --font-dir out/font` → `out/POTC_ja_test<N>.zip`。ユーザーへは SendUserFile で渡す。
+3. テスト版: メモを `release/TEST_MEMO_TEMPLATE.txt` の形で書き、`python3 -I tools/make_zip.py test out/ja <N> --version <版> --memo <メモ> --font-dir out/font` → `out/POTC_ja_<版>_test<N>.zip`(版はファイル名とメモ1行目に必ず入る。前の版のテスト版と取り違えないため)。ユーザーへは SendUserFile で渡す。
 
 ## 新しい版へ移行するとき
 1. 新しい zip の一覧と旧 CSV を比べる(`lang_build.py` の「未訳」「一覧に無い項目」が差分)。同じ英語は訳が自動で当たる。

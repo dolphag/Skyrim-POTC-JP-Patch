@@ -3,7 +3,7 @@
 先に tools/lang_build.py で <dir>/SKSE/Plugins/FightWithMe/Translations/FightWithMePaths_JAPANESE.txt を作っておく。
 
 使い方(リポジトリのルートから):
-  python3 -I tools/make_zip.py test    out/ja <N> --memo memo.txt [--font-dir out/font]   -> out/POTC_ja_test<N>.zip
+  python3 -I tools/make_zip.py test    out/ja <N> --version 1.2.0-1 --memo memo.txt [--font-dir out/font]   -> out/POTC_ja_<版>_test<N>.zip
   python3 -I tools/make_zip.py release out/ja --font-dir out/font --version 1.0.0-1
 
 zip の中身:
@@ -74,15 +74,16 @@ def write(path, entries):
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest='mode', required=True)
-    t = sub.add_parser('test'); t.add_argument('dir'); t.add_argument('n'); t.add_argument('--memo', required=True); t.add_argument('--out', default='out')
+    t = sub.add_parser('test'); t.add_argument('dir'); t.add_argument('n'); t.add_argument('--version', required=True, help='パッチの版(例 1.2.0-1)。ファイル名とメモの1行目に入る'); t.add_argument('--memo', required=True); t.add_argument('--out', default='out')
     t.add_argument('--font-dir', help='tools/make_font_pack.py の出力。あれば SKSE/Plugins/Fonts/ に入れる')
     r = sub.add_parser('release'); r.add_argument('dir'); r.add_argument('--font-dir', required=True, help='tools/make_font_pack.py の出力(日本語フォント。同梱する)'); r.add_argument('--version', required=True); r.add_argument('--out', default='out')
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     if a.mode == 'test':
         memo = open(a.memo, encoding='utf-8').read().replace('\r\n', '\n')
+        if a.version not in memo.split('\n')[0]: raise SystemExit('メモの1行目に版 %s がありません: %s' % (a.version, memo.split('\n')[0]))
         entries = load_text(a.dir) + (load_fonts(a.font_dir) if a.font_dir else []) + [('テスト用メモ.txt', memo.encode('utf-8'))]
-        write(os.path.join(a.out, '%s_ja_test%s.zip' % (PREFIX, a.n)), entries)
+        write(os.path.join(a.out, '%s_ja_%s_test%s.zip' % (PREFIX, a.version, a.n)), entries)
     else:
         text = load_text(a.dir)
         entries = text + load_fonts(a.font_dir) + readmes('', a.version, {'{SHA_JA}': sha(text[0][1])})

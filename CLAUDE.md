@@ -40,7 +40,7 @@ FWM の日本語化パッチは別リポジトリ(dolphag/Skyrim-Fight-With-Me-J
 
 ## 作業の進め方
 - 手順は skill `lang-text-workflow`(生成・検査・テスト版 zip)と `release-package`(README・zip・Nexus 文面・タグ)。zip 作成は `tools/make_zip.py`。
-- **実機(ゲーム内)確認なしにリリースしない**。テスト版は `out/` に `test<N>` で作り(git 管理外)、ユーザーのスクリーンショットと所見で直す。テストの前に、ユーザーの SKSE ログの 1 行目と `[Text] JAPANESE: N lines` を確認する。
+- **実機(ゲーム内)確認なしにリリースしない**。テスト版は `out/` に `<版>_test<N>` で作り(ファイル名とメモ1行目に版を入れる)(git 管理外)、ユーザーのスクリーンショットと所見で直す。テストの前に、ユーザーの SKSE ログの 1 行目と `[Text] JAPANESE: N lines` を確認する。
 - 調査の結果は必ずファイルに残す(`docs/`)。会話には残らない前提で作業する。
 - 大きいファイルは全文を読まず、必要な範囲だけ読む。
 - 開発用の依存: `pip install -r requirements-dev.txt`(`python3 -I` で実行)。
