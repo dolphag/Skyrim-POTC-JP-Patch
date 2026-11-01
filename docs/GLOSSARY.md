@@ -31,6 +31,10 @@
 |---|---|---|
 | Skald / Path of the Skald | スカルド / スカルドの道 | 北欧の吟遊詩人 |
 | Ljodh(Ljóð) | リョード | 古ノルド語で「詩・歌」。読みは暫定 |
+| critical | クリティカル | 「会心」は使わない(FWM 用パッチと統一) |
+| wind-up(魔法) | 準備動作 | FWM 用パッチに合わせた |
+| inventory | 所持品 | 「持ち物」は使わない(1.0.0 の訳と FWM 用パッチに合わせた) |
+| Spectral Aegis | 幽体のイージス | FWM 用パッチの訳 |
 | Fervor / Echoes / Hollow / Glory | 熱狂 / 残響 / 虚ろ / 栄光 | リョード 4 種 |
 | stack | スタック | 「重複しない」の意味の stack(効果が加算されない)は従来どおり「重複」 |
 | finale / final chord | 終曲 / 最後の和音 | |
