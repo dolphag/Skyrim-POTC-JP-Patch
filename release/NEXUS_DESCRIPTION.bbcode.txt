@@ -1,10 +1,10 @@
-[url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url] 1.2.0 を日本語化するパッチです。原作がメッセージを外部のテキストファイルに分けて読み込んでいるので、その日本語版を置きます。DLLは変更しません(ファイルを置くだけです)。
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url] を日本語化するパッチです。対応する版は、ファイル一覧と更新履歴に書いてあります。原作がメッセージを外部のテキストファイルに分けて読み込んでいるので、その日本語版を置きます。DLLは変更しません(ファイルを置くだけです)。
 
 日本語対応フォントを同梱しています(原作のテーマ用フォントを置き換えます)。詳しくは「日本語フォント(同梱)」を参照してください。
 
 [b]必須[/b]
 [list]
-[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url] 1.2.0 本体と、原作の必須ファイル POTC Effects 1.0.22 以上[/*]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url] 本体(対応する版は更新履歴を参照)と、原作の必須ファイル POTC Effects[/*]
 [*]SKSE Menu Framework 3 で日本語を表示するための日本語フォント設定。
 日本語環境を導入済みなら追加の設定は不要です。私は [url=https://skyrimspecialedition.2game.info/detail.php?id=120352]2game 様の日本語化ファイル[/url]で動作を確認しています。[/*]
 [/list]
@@ -18,10 +18,11 @@ Fight With Me の日本語化パッチにも同じフォントが入っていま
 [b]推奨[/b]
 [list]
 [*]姉妹MODの日本語化パッチ: [url=https://www.nexusmods.com/skyrimspecialedition/mods/194872]Walk With Me - Japanese Translations Patch[/url][/*]
+[*]Fight With Me を併用する場合: [url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url](下の「Fight With Me を併用する場合」を参照)[/*]
 [/list]
 
 [b]Fight With Me を併用する場合(任意)[/b]
-Path of the Companions は [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url] がなくても動きます。併用するときは、Fight With Me 用の日本語化パッチ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url])の 0.6.0 用(本パッチと同時に更新)も入れてください。0.5.0 用の古いパッチのままだと、共通の文言の一部で訳が食い違います。バトルプランなど、Fight With Me の画面が日本語になります。
+Path of the Companions は [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url] がなくても動きます。併用するときは、Fight With Me 用の日本語化パッチ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url])も、Fight With Me の版に合った最新のものを入れてください。パッチの版が古いままだと、共通の文言の一部で訳が食い違うことがあります。バトルプランなど、Fight With Me の画面が日本語になります。
 本パッチの訳にも Fight With Me の画面の文言の大部分が含まれているので、両方入れても問題ありません。
 
 [b]バージョンについて[/b]
@@ -55,14 +56,14 @@ SKSE Menu Framework の日本語グリフ範囲の制限があり、この範囲
 [list]
 [*]パーティ設定ページの、役割・注目対象・位置取りのドロップダウン(選択肢と、その説明のホバー表示)は、Fight With Me と共通の画面で、原作のこの部分がメッセージのファイルを通していないため、英語のままです(原作側の修正が必要です)。[/*]
 [*]テーマ名(Vanilla / Oxblood / Nordic)は、原文のままにしています。[/*]
-[*]スカルドの演奏中の通知・状態表示は、作者の環境で表示を確認できていません(訳は入れてあります)。[/*]
 [*]キー名・ボタン表示、ログ、INIのコメントは変更できません。[/*]
 [/list]
 「スキル」は、バニラのスキルと混同しないよう、「アビリティ」に統一しています。
-新しいアビリティ名(ケイオスダウン、最後の砦、風渡り、爆裂矢 など)は意訳を含み、一部は暫定です。ご意見があればコメントでお知らせください。
+アビリティ名(ケイオスダウン、最後の砦、風渡り、爆裂矢 など)には意訳を含み、一部は暫定です。ご意見があればコメントでお知らせください。
+全ノードの英日対照表(名前と効果の要約)は [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch/blob/main/PATHS_TABLE.md]GitHub の PATHS_TABLE.md[/url] にあります。効果の数値には、配布版と未照合の部分があります(表の冒頭を参照)。訳への意見の参照にしてください。
 
 [b]権利・ソース[/b]
-Path of the Companions のページの権限表示(改変・素材の利用・他サイトへの転載は出典明記で可。2026-11-01 に確認)に従って作った非公式の翻訳です。本パッチは Nexus Mods のこのページでのみ配布します。他サイトへの転載はご遠慮ください。作者から依頼があれば速やかに削除します。
+Path of the Companions のページの権限表示(改変・素材の利用・他サイトへの転載は出典明記で可)に従って作った非公式の翻訳です。本パッチは Nexus Mods のこのページでのみ配布します。他サイトへの転載はご遠慮ください。作者から依頼があれば速やかに削除します。
 本パッチに、本体のファイル(DLL・画像など)は含まれません。含まれるのは、原作の英語の文言と、その日本語訳、日本語フォントです。
 パッチ生成のスクリプトと翻訳表(配布用のファイルやフォントは含みません)は [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch]GitHub[/url] にあります(版ごとにタグがあります)。
 日本語フォント(同梱)は、Noto Sans JP(Copyright 2014-2021 Adobe)を元に、内部の名前を付け替えたものです。SIL Open Font License 1.1。
@@ -77,13 +78,13 @@ Path of the Companions のページの権限表示(改変・素材の利用・�
 ――――――――――――――――――――
 [b]English[/b]
 
-An unofficial Japanese translation patch for [url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url] 1.2.0. The original keeps its messages in external text files; this patch is the Japanese version of those files, so no DLL is changed (just a file to place).
+An unofficial Japanese translation patch for [url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url]. The supported versions are listed in the files and changelog. The original keeps its messages in external text files; this patch is the Japanese version of those files, so no DLL is changed (just a file to place).
 
 A Japanese-capable font is included (it replaces the original's theme fonts); see "Japanese font (included)" below.
 
 [b]Requirements[/b]
 [list]
-[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url] 1.2.0 and POTC Effects 1.0.22 or newer (required by the original)[/*]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/196635]Path of the Companions[/url] (see the changelog for the supported version) and POTC Effects (required by the original)[/*]
 [*]A Japanese font set up in SKSE Menu Framework 3.
 No extra setup is needed if you already have a Japanese environment. I tested with the [url=https://skyrimspecialedition.2game.info/detail.php?id=120352]Japanese localization by 2game[/url].[/*]
 [/list]
@@ -97,10 +98,11 @@ The Fight With Me Japanese patch contains the same font (identical files, so hav
 [b]Recommended[/b]
 [list]
 [*]Sister patch: [url=https://www.nexusmods.com/skyrimspecialedition/mods/194872]Walk With Me - Japanese Translations Patch[/url][/*]
+[*]If you also use Fight With Me: [url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url] (see "If you also use Fight With Me" below)[/*]
 [/list]
 
 [b]If you also use Fight With Me (optional)[/b]
-Path of the Companions works without [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url]. If you use both, install the Fight With Me patch ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url]) for 0.6.0 (updated together with this one) too; with the older 0.5.0 patch some shared texts are translated differently. This way its own screens (battle plan, ...) are translated.
+Path of the Companions works without [url=https://www.nexusmods.com/skyrimspecialedition/mods/194766]Fight With Me[/url]. If you use both, install the Fight With Me patch ([url=https://www.nexusmods.com/skyrimspecialedition/mods/194874]Fight With Me - Japanese Translations Patch[/url]) too, in the version that matches your Fight With Me; with an outdated patch some shared texts can be translated differently. This way its own screens (battle plan, ...) are translated.
 This patch already contains most of Fight With Me's screen texts, so having both is fine.
 
 [b]Versions[/b]
@@ -128,13 +130,13 @@ The tree screens (abilities, branches, traits, ranks, bonuses, the guide), setti
 [list]
 [*]The role / focus / position dropdowns on the Party settings page (the choices and their hover tooltips) stay in English. This screen is shared with Fight With Me, and the original does not read these texts from its external message files, so it needs a fix on the original's side.[/*]
 [*]Theme names (Vanilla / Oxblood / Nordic) are kept as in the original.[/*]
-[*]The Skald's notices and status lines during a performance could not be checked on screen by the author (the translations are included).[/*]
 [*]Key names, button labels, logs and INI comments cannot be changed.[/*]
 [/list]
-"Skill" is rendered as "アビリティ" (ability) to avoid confusion with vanilla skills. Some new ability names are free translations and provisional; feedback is welcome in the comments.
+"Skill" is rendered as "アビリティ" (ability) to avoid confusion with vanilla skills. Some ability names are free translations and provisional; feedback is welcome in the comments.
+An English/Japanese table of all perk-tree nodes (names and effect summaries) is in [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch/blob/main/PATHS_TABLE.md]PATHS_TABLE.md on GitHub[/url]. Some values are not yet checked against the distributed version (see the top of the table). Please use it as a reference when giving feedback.
 
 [b]Rights / source[/b]
-An unofficial translation made following the permissions on the Path of the Companions page (modification, asset use and uploading to other sites allowed with credit; checked on 2026-11-01). It is distributed only here on Nexus Mods; please do not repost it. It will be removed promptly if the author asks.
+An unofficial translation made following the permissions on the Path of the Companions page (modification, asset use and uploading to other sites allowed with credit). It is distributed only here on Nexus Mods; please do not repost it. It will be removed promptly if the author asks.
 This patch contains no file of the original (no DLL or images), only the original's English strings, the Japanese translation and a Japanese font.
 Scripts and the translation table (no distribution files or fonts): [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch]GitHub[/url] (one tag per version).
 The Japanese font (included) is based on Noto Sans JP (Copyright 2014-2021 Adobe) with its internal names changed; SIL Open Font License 1.1.
