@@ -45,6 +45,18 @@ FWM の日本語化パッチは別リポジトリ(dolphag/Skyrim-Fight-With-Me-J
 - 大きいファイルは全文を読まず、必要な範囲だけ読む。
 - 開発用の依存: `pip install -r requirements-dev.txt`(`python3 -I` で実行)。
 
+## Nexus のページ説明文(`release/NEXUS_DESCRIPTION.bbcode.txt`)のルール
+- **版に依存しない書き方にする**。Paths・FWM・POTC Effects の版番号、権限の確認日、「新しい」「同時に更新」、版ごとの既知の未確認事項は書かない。対応版は、ファイル一覧・更新履歴(`NEXUS_TEXT_<版>.md`)と zip 内 README に書く。版のたびにページ説明を書き直さないため。
+- 姉妹 MOD の日本語化パッチのリンク(Walk With Me、Fight With Me)を入れる。FWM は任意の連携先として、「版に合った最新のパッチ」と書く。
+- 日本語・英語の両方を同じ内容にする。対照表へのリンクと注記を、アビリティ名の注記のすぐ後に置く。
+
+## 対照表(`PATHS_TABLE.md`)のルール
+- 訳への意見募集の参照用。`python3 -I tools/paths_table.py --src <fatalCMD/potc の clone>` で作る(構造・数値は原作の公開ソース、日本語名は CSV、効果の要約はスクリプト内の `EFFECTS`)。手で表を直さず、スクリプトを直して再生成する。
+- 原作の英文(説明文)は写さない。英語は名前だけ。効果は自分の言葉で要約する。
+- **公開ソースは配布版より古いことがある**(1.2.0 の時点で 1.0.0)。数値が配布版と未照合である旨の注意書きを、表の冒頭に残す(ユーザー決定)。スカルドのように公開ソースに無いものは「(推定)」「未確認」と明記する。確認できていない数値を事実として書かない。
+- Paths の版が上がったら、新しい公開ソースがあれば `--src` を替えて再生成し、無ければ実機で照合してから `EFFECTS` を直す。調査の経緯は `docs/Paths-<版>-findings.md` に残す。
+- リンクは `main` 上の `PATHS_TABLE.md`(README・ページ説明・`NEXUS_TEXT`)。
+
 ## Nexus の確認
 - WebFetch は Nexus で失敗しやすい(PROVENANCE_REQUIRED)。使えない場合は、ユーザーに確認(貼り付け・スクリーンショット)を依頼する。
 - API で引く手段: skill `nexus-check`(`tools/nexus_query.py`、キー不要、版・ファイル一覧は FWM リポジトリで実測済み)。環境が api.nexusmods.com を許可している必要がある。**権限(Permissions)は API に無い** → ブラウザかユーザー確認。ダウンロード(`NEXUS_API_KEY` 要)は未検証。詳細は `docs/nexus-api-notes.md`。
