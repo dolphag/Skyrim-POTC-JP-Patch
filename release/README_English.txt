@@ -51,6 +51,8 @@ What is not in Japanese
 - Key names and button labels (Tab, Esc, ...), logs, INI comments.
 - Strings that come from the game or other mods (spell and companion names).
 - Texts the original added after this version.
+"Skill" is rendered as "アビリティ" (ability) to avoid confusion with vanilla skills. Some new ability names are free translations and provisional; feedback is welcome.
+An English/Japanese table of all perk-tree nodes (names and effect summaries; some values are not yet checked against 1.2.0): https://github.com/dolphag/Skyrim-POTC-JP-Patch/blob/main/PATHS_TABLE.md
 
 Rights, source and credits
 Original author: hashhbbrown (GitHub: fatalCMD). All original strings, trees and game design belong to the author.

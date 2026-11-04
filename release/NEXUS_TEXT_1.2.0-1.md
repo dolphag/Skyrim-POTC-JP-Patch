@@ -26,3 +26,4 @@
 5. スクリーンショット(Paths のツリー、詳細パネル、設定)。AI 利用の開示。他サイトへの転載はご遠慮ください。
 6. 対応版: Paths 1.2.0。原作の更新時はパッチを外さなくてよいが、新しい文言は英語のまま。
 7. GitHub(ソースのみ): https://github.com/dolphag/Skyrim-POTC-JP-Patch
+8. **対照表**: 全ノードの英日対照表 https://github.com/dolphag/Skyrim-POTC-JP-Patch/blob/main/PATHS_TABLE.md へのリンクを、アビリティ名の注記のすぐ後に入れる(訳への意見の参照用。数値に未照合の部分があることも書く。`NEXUS_DESCRIPTION.bbcode.txt` に反映済み)。
