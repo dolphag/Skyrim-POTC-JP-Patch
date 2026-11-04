@@ -60,7 +60,7 @@ SKSE Menu Framework の日本語グリフ範囲の制限があり、この範囲
 [/list]
 「スキル」は、バニラのスキルと混同しないよう、「アビリティ」に統一しています。
 アビリティ名(ケイオスダウン、最後の砦、風渡り、爆裂矢 など)には意訳を含み、一部は暫定です。ご意見があればコメントでお知らせください。
-全ノードの英日対照表(名前と効果の要約)は [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch/blob/main/PATHS_TABLE.md]GitHub の PATHS_TABLE.md[/url] にあります。効果の数値には、配布版と未照合の部分があります(表の冒頭を参照)。訳への意見の参照にしてください。
+全ノードの英日対照表(名前と効果の要約)は [url=https://github.com/dolphag/Skyrim-POTC-JP-Patch/blob/main/PATHS_TABLE.md]GitHub の PATHS_TABLE.md[/url] にあります。効果の数値には、配布版と未照合の部分があります(表の冒頭を参照)。日本語訳に違和感などあればご指摘ください。
 
 [b]権利・ソース[/b]
 Path of the Companions のページの権限表示(改変・素材の利用・他サイトへの転載は出典明記で可)に従って作った非公式の翻訳です。本パッチは Nexus Mods のこのページでのみ配布します。他サイトへの転載はご遠慮ください。作者から依頼があれば速やかに削除します。
