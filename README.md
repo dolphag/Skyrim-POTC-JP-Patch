@@ -72,7 +72,7 @@ Fight With Me は Paths の任意の連携先で、前提ではありません(F
 
 ### ファイル
 - `translations_en_ja.csv`: 英日の全組(1099)。英語の列は原作者のもので、このリポジトリのライセンスの対象外です。
-- `PATHS_TABLE.md`: 全ノード(ツリー)の英日対照表(名前・効果の要約)。訳への意見の参照用です。`tools/paths_table.py` で作ります(数値は原作の公開ソース=1.0.0 のもの。スカルドの節は一部が推定です)。
+- `PATHS_TABLE.md`: 全ノード(ツリー)の英日対照表(名前・効果の要約)。日本語訳に違和感などあればご指摘いただく際の参照用です。`tools/paths_table.py` で作ります(数値は原作の公開ソース=1.0.0 のもの。スカルドの節は一部が推定です)。
 - `tools/lang_build.py`: 原作の zip と対応表から `FightWithMePaths_JAPANESE.txt`(と、言語名が ENGLISH のときに読まれる写し `FightWithMe_JA_Paths_ENGLISH.txt`)を作ります(未訳・書式欄・漢字範囲の検査つき)。
 - `tools/make_zip.py`: テスト版と配布用の zip(配布用にはフォントを同梱)。`tools/make_font_pack.py`: OFL の日本語フォントを、テーマ用フォントの 3 つの名前で書き出します(フォント本体は利用者が用意し、コミットしません)。
 - `release/`: README の雛形と Nexus 用文面。`docs/`: 原作の調査(形式・フォント・同梱)、用語集、原作者向け報告の文案(未送信)。
